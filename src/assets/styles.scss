@@ -1,0 +1,95 @@
+@import "./variables.scss";
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: rgb(230, 236, 230);
+	font-family: 'Roboto', sans-serif;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.form-group{ 
+  display: flex;
+  align-items: left;
+	flex-direction: column;
+	max-width: 500px;
+	margin-bottom: 30px;
+}
+
+.form-control {
+	width: 400px;
+	max-height: 60px;
+	border: 1px solid rgb(238, 139, 9);
+	border-radius: $btn-radius;
+	cursor: pointer;
+}
+
+label {
+	margin-bottom: 10px;
+	display: flex;
+	align-items: center;
+}
+
+p{
+	margin-left: 5px;
+}
+
+.radioBtn {
+	display: flex;
+}
+
+.form-check {
+	margin-left: 50px;
+	margin-bottom: 40px;
+}
+
+.invalid-feedback {
+	color: $error-color;
+	display: flex;
+}
+
+.is-invalid {
+	border: 2px solid $error-color;
+}
+
+.btn {
+	padding: 10px 20px;
+	background-color: $btn-color;
+	font-size: $btn-text;
+	border-radius: $btn-radius;
+}
+
+@media (max-width: 425px) {
+	.form-group {
+		max-width: 150px;
+		font-size: 12px;
+	}
+
+	p {
+		font-size: 10px;
+	}
+
+	.radioBtn {
+		font-size: 12px;
+	}
+
+	.form-check {
+		font-size: 12px;
+	}
+
+	.form-control {
+		max-width: 150px;
+	}
+
+	.btn {
+		padding: 5px 10px;
+		background-color: $btn-color;
+		font-size: 12px;
+		border-radius: $btn-radius;
+	}
+}
